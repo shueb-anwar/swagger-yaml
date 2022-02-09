@@ -19,16 +19,6 @@ app.route('/book')
     res.send('Get a random book')
   });
 
-  app.route({
-    method: 'GET',                            
-    path: '/api/v1/sessions/_latest',        
-                                            
-     handler(req) {                      
-      res.send('Get a random book');
-    }
-  });
- 
-
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 });
